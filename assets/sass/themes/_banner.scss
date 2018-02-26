@@ -1,0 +1,13 @@
+@import 'variables';
+.banner {
+    min-height: 300px;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    &__picture {
+        @media (max-width: $screenMobile) {
+
+        }
+    }
+}
