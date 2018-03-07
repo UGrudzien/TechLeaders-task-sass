@@ -6,6 +6,7 @@
     <title>
         Title
     </title>
+    <meta name="viewport" content="width=device-width">
     <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -52,7 +53,9 @@
     </section>
     <section class="banner">
         <picture>
-        <img src="assets/img/bannerPictures/jonatan1200.jpg" class=" banner banner__picture"/>
+            <source media="(max-width=$screenMobile)" srcset="assets/img/bannerPictures/jonatanMobile.png">
+            <source media="(max-width=$screenTablet)" srcset="assets/img/bannerPictures/jonatanTablet2.jpg">
+          <img  src="assets/img/bannerPictures/jonatan1200.jpg" />
         </picture>
     </section>
 

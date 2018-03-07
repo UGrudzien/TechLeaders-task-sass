@@ -1,8 +1,7 @@
-@import "variables";
-@import "global";
+@import "mixin";
 .header {
     min-height: 100px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     width: 100%;
     &__element {
@@ -10,7 +9,7 @@
         margin: 0px;
         float: left;
         &__navlist {
-            @media(max-width:$screenDesktop){
+            @media(max-width:$screenMobile){
                 display: none;
             }
 
@@ -29,7 +28,7 @@
                         font-family: $font;
                         &--first {
                             border-top-style: solid;
-                            border-top-color: #fc32b9;
+                            border-top-color: $border-top-color;
                             border-top-width: 4px;
                         }
                     }
@@ -42,7 +41,7 @@
             text-align: center;
             float: none;
             margin-top: 5px;
-            @media(max-width:$screenDesktop){
+            @media(min-width:$screenMobile){
                 margin-left: 0px;
                 
             }
@@ -80,7 +79,7 @@
         color: #f9f7ca;
         margin-top: 100px;
         &__item{
-            font-size: 55px;
+            font-size: 3,4rem;
             font-weight: strong;
             margin: 0px;
         }
