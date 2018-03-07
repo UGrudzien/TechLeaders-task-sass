@@ -2,12 +2,10 @@
 .banner {
     min-height: 300px;
     z-index: -1;
-    position: absolute;
+    position: fixed;
     top: 0px;
     width: 100%;
     &__picture {
-        @media (max-width: $screenMobile) {
-
-        }
+        height: 100%;
     }
 }
