@@ -38,10 +38,10 @@
             }
         }
         &--hamburger-menu {
-            @media(max-width: $screenTablet) {
+            @media(max-width: $screenTablet), (min-width: $screenDesktop) {
                 display: none;
             }
-            @media(min-width:$screenTablet) {
+            @media(min-width:$screenTablet) and (max-width: $screenDesktop) {
                 display: inline-block;
                 color: $font-color;
                 margin-left: 10px;
@@ -53,6 +53,10 @@
             text-align: center;
             float: none;
             margin-top: 5px;
+            @media(min-width: $screenDesktop) {
+                float: left;
+                margin-left: 25%;
+            }
         }
         &__logo img {
             &:hover {
@@ -68,6 +72,7 @@
             }
             @media(min-width:$screenDesktop) {
                 min-width: 120px;
+                margin-top: 5px;
             }
             padding-left: 5px;
             border-style: solid;
@@ -84,7 +89,13 @@
                 border-color: transparent;
                 background-color: transparent;
                 font-size: $font-size;
+                height: 16px;
             }
         }
     }
+}
+
+.test {
+    width: 100%;
+    min-height: 3000px;
 }

@@ -2,12 +2,12 @@
 .banner {
     min-height: 300px;
     z-index: -1;
-    position: fixed;
+   
     width: 100%;
     &__content {
         position: absolute;
         z-index: 0;
-        top: 45%;
+        top: 20%;
         text-align: center;
         width: 100%;
         min-height: 300px;
@@ -36,19 +36,14 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 50px;
-            /*@media(min-width:$screenMobile){
-            margin-left: -19%;
-          
-        }
-        @media(min-width:$screenTablet){
-            max-width: 40%;
-        }
-        @media(min-width:$screenDesktop){
-            max-width: 25%;
-        }*/
+
         }
     }
     &__picture {
         height: 100%;
+    
+            width: 100%;
+        overflow: hidden;
+        object-fit: cover;
     }
 }
