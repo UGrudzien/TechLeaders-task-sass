@@ -9,10 +9,12 @@
         margin: 0px;
         float: left;
         &__navlist {
-            @media(max-width:$screenMobile){
+            @media(max-width: $screenDesktop) {
                 display: none;
             }
-
+            @media(min-width:$screenDesktop) {
+                display: inline;
+            }
             float: left;
             margin-top: 5px;
             &__list {
@@ -35,26 +37,38 @@
                 }
             }
         }
+        &--hamburger-menu {
+            @media(max-width: $screenTablet) {
+                display: none;
+            }
+            @media(min-width:$screenTablet) {
+                display: inline-block;
+                color: $font-color;
+                margin-left: 10px;
+                margin-top: 5px;
+                float: left;
+            }
+        }
         &--logo {
-            margin-left: auto;
-            margin-right: auto;
             text-align: center;
             float: none;
             margin-top: 5px;
-            @media(min-width:$screenMobile){
-                margin-left: 0px;
-                
-            }
         }
-        &__logo img{
-            &:hover{
+        &__logo img {
+            &:hover {
                 transform: scale(1.2);
             }
         }
         &--input {
             float: right;
         }
-        &__inputWrapper {
+        &__searchWrapper {
+            @media(max-width: $screenTablet) {
+                display: none;
+            }
+            @media(min-width:$screenDesktop) {
+                min-width: 120px;
+            }
             padding-left: 5px;
             border-style: solid;
             border-radius: 15px;
@@ -62,34 +76,15 @@
             border-color: transparent;
             opacity: 0.6;
             height: 25px;
-            margin-top: -15px;
+            margin-top: -20px;
             margin-right: 5px;
+            width: 120px;
             &__input {
                 border-style: solid;
                 border-color: transparent;
                 background-color: transparent;
                 font-size: $font-size;
-   
             }
         }
     }
-    &__maintitle{
-        text-align: center;
-        font-family: $font;
-        color: #f9f7ca;
-        margin-top: 100px;
-        &__item{
-            font-size: 3,4rem;
-            font-weight: strong;
-            margin: 0px;
-        }
-    }
-    &__button{
-        @include btn;
-        max-width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 200px;
-    }
-    
 }

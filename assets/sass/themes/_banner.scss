@@ -1,10 +1,53 @@
-
+@import "mixin";
 .banner {
     min-height: 300px;
     z-index: -1;
     position: fixed;
-    top: 0px;
     width: 100%;
+    &__content {
+        position: absolute;
+        z-index: 0;
+        top: 45%;
+        text-align: center;
+        width: 100%;
+        min-height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        &__maintitle {
+            width: 70%;
+            text-align: center;
+            font-family: $font;
+            color: #f9f7ca;
+            z-index: 0;
+            margin: 0 auto;
+            /*@media(min-width: $screenTablet) {
+                margin-left:-30%;
+            }*/
+            &__item {
+                font-size: 3, 4rem;
+                font-weight: strong;
+                margin: 0px;
+            }
+        }
+        &__button {
+            @include btn;
+            width: 200px;
+            z-index: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            /*@media(min-width:$screenMobile){
+            margin-left: -19%;
+          
+        }
+        @media(min-width:$screenTablet){
+            max-width: 40%;
+        }
+        @media(min-width:$screenDesktop){
+            max-width: 25%;
+        }*/
+        }
+    }
     &__picture {
         height: 100%;
     }

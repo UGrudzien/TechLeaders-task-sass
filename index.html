@@ -7,8 +7,12 @@
         Title
     </title>
     <meta name="viewport" content="width=device-width">
-    <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -32,31 +36,37 @@
 
                 </ul>
         </div>
-        <div class="header__element header__element--logo">
+         <a href="#" class="header__element--hamburger-menu">
+          <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+        <div class=" header__element--logo">
             <a href="#" rel="logo" class="header__element__logo">
-                <img src="assets/img/logo.png" alt="logo"/></a>
+                <img src="assets/img/logo.png" alt="logo" /></a>
         </div>
 
-        <div class="header__element header__element--input">
-            <div class="header__element__inputWrapper">
-                <input class="header__element__inputWrapper__input" placeholder="Search for.."/>
+        <div class="  header__element--input">
+            <div class="header__element__searchWrapper">
+                <input class="header__element__searchWrapper__input" placeholder="Search for.." />
             </div>
         </div>
-        <div class=" header__maintitle">
 
-            <h1 class="header__maintitle__item">
-            Art is ethernal happines
-            </h1>
-        </div>
-        <div class="button header__button">Work with us</div>
 
     </section>
     <section class="banner">
         <picture>
             <source media="(max-width: 480px)" srcset="assets/img/bannerPictures/jonatanMobile.png">
             <source media="(max-width:768px)" srcset="assets/img/bannerPictures/jonatanTablet2.jpg">
-          <img  src="assets/img/bannerPictures/jonatan1200.jpg" class="banner__picture" />
+            <img src="assets/img/bannerPictures/jonatan1200.jpg" class="banner__picture" />
         </picture>
+        <div class="banner__content">
+            <div class=" banner__content__maintitle">
+
+                <h1 class="banner__content__maintitle__item">
+                    Art is ethernal happines
+                </h1>
+            </div>
+            <div class="button banner__content__button">Work with us</div>
+        </div>
     </section>
 
 </body>
