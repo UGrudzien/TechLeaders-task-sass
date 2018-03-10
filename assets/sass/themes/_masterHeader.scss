@@ -1,0 +1,76 @@
+.masterHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -$logoImageWidth/2;
+    }
+    &__navigation {
+        display: none;
+        @media( min-width: $screenDesktop ) {
+            display: inline-block;
+            float: left;
+            margin-top: 5px;
+        }
+        &__list {
+            @include non-graphic-list;
+            &__item {
+                display: inline-block;
+                &__link {
+                    text-decoration: none;
+                    border-top: 4px solid transparent;
+                    &.active,
+                    &:hover,
+                    &--active {
+                        border-top-color: $border-top-color;
+                    }
+                }
+            }
+        }
+    }
+    &--hamburger-menu {
+        display: none;
+        @media(min-width:$screenTablet) and (max-width: $screenDesktop) {
+            display: inline-block;
+            //color: $font-color;
+            margin-left: 10px;
+            margin-top: 5px;
+            float: left;
+        }
+    }
+    //&__searchWrapper {
+    //        @media(max-width: $screenTablet) {
+    //            display: none;
+    //        }
+    //        @media(min-width:$screenDesktop) {
+    //            min-width: 120px;
+    //            margin-top: 5px;
+    //        }
+    //        padding-left: 5px;
+    //        border-style: solid;
+    //        border-radius: 15px;
+    //        //background-color: $font-color;
+    //        border-color: transparent;
+    //        opacity: 0.6;
+    //        height: 25px;
+    //        margin-top: -20px;
+    //        margin-right: 5px;
+    //        width: 120px;
+    //        &__input {
+    //            border-style: solid;
+    //            border-color: transparent;
+    //            background-color: transparent;
+    //        }
+    //    }
+
+}
+
+.searchWrapper {
+    position: relative;
+    &--masterHeader {
+        float: right;
+    }
+}

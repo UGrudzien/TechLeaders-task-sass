@@ -1,11 +1,32 @@
-$body-bg-color: #e8e5ab;
-$font-color: white;
+//names sync with node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+
+//Colors
+
+$white: white;
+$black: black;
+
+//Background
+$body-bg: #e8e5ab;
+$text-color: white;
+
+//Buttons
 $button-font-color: #060651;
 $button-bg-color: #f9caf5;
 $button-br-color:#f9b1f2;
 $border-top-color: #fc32b9;
-$font:  'Open Sans', sans-serif;
-$font-size:16px;
-$screenMobile: 480px;
-$screenTablet: 768px;
-$screenDesktop: 1024px;
+
+//Typography
+$font-family-base:  'Open Sans', sans-serif;
+$font-size-base: 16px;
+
+//Responsivness
+$screenMobile: $screen-xs;
+$screenTablet: $screen-sm;
+$screenDesktop: $screen-lg;
+
+//Sizes
+$logoImageWidth: 62px !default;
+
+//Misc
+$animTime: .5s;
+$ease: ease;

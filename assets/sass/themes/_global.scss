@@ -1,7 +1,25 @@
-@import "variables";
-
 body {
-  background-color : $body-bg-color;
-  margin: 0px;
-  font-family: $font;
+  background-color : $body-bg;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+
+a{
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    transition: color $animTime $ease, background-color $animTime $ease, border-color $animTime $ease;
   }
+}
+
+input:focus {
+  outline: none;
+}
+
+.logo {
+  display: inline-block;
+  background: url(../img/logo.png) center no-repeat;
+  width: $logoImageWidth;
+  height: 19px;
+  @include text-hide();
+}
