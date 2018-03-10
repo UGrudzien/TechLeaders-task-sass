@@ -1,6 +1,16 @@
+//Bootstrap
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize"; //Normalize CSS
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding"; //Screen readers classes
+
+//Local Variables & mixins
 @import "variables";
+@import "mixins";
+
+//Theme
 @import "themes/global";
 @import "themes/banner";
-@import "themes/header";
+@import "themes/masterHeader";
 @import "themes/whatWedo";
 @import "themes/ourLatestWork";
